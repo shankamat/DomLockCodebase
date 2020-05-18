@@ -513,7 +513,7 @@ void Tree::RenumberingAlgorithm(TreeNode* ptr){
 			}		
 		}			
 	}
-	PrintLevelOrderTraversal();
+	//PrintLevelOrderTraversal();
 
 }
 
