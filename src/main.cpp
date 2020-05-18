@@ -15,8 +15,8 @@ vector<vector<TreeNode*> > Proxy;
 
 int main(int argc, char *argv[])
 {	
-	//srand( time(NULL) );
-	srand(0);	
+	//srand(time(NULL) );
+	srand(1);	
 	err *e=new err();
 	Tree *T=new Tree();
 	thread *th=new thread();

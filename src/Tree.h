@@ -513,7 +513,7 @@ void Tree::RenumberingAlgorithm(TreeNode* ptr){
 			}		
 		}			
 	}
-	//PrintLevelOrderTraversal();
+//	PrintLevelOrderTraversal();
 
 }
 
@@ -609,10 +609,10 @@ void Tree::PrintLevelOrderTraversal(){
 		cout<<"Level "<<i+1<<" : ";
 		vector<TreeNode*> curr = Proxy[i];
 		for(int j=0;j<curr.size();j++){
-			cout<<curr[j]->data<<":"<<curr[j]->inDegree;
+			//cout<<curr[j]->data<<":"<<curr[j]->inDegree;
 			//cout<<":("<<curr[j]->preNumber<<","<<curr[j]->postNumber<<")";
 			//cout<<":("<<curr[j]->minShiftOffset<<","<<curr[j]->maxShiftOffset<<") ";
-			cout<<":("<<curr[j]->minParentOffset<<","<<curr[j]->maxParentOffset<<") ";
+			//cout<<":("<<curr[j]->minParentOffset<<","<<curr[j]->maxParentOffset<<") ";
 		}	
 		cout<<endl;
 	}
@@ -796,7 +796,7 @@ void Tree::DummyTask(int node, double &currDegOfConc)
 	extern int distribution;
 	// write access:1, read access:0
 	int accessType = 1;
-	srand(0);
+	srand(1);
 
 	TreeNode* NodeArray[NoOfRequestedNode];
 	set<TreeNode*> nodeSet;
